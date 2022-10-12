@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.sunmi.v2.printer">
   <application>
-  <receiver android:name="com.sunmi.v2.printer.PrinterReceiver" android:enabled="true">
+  <receiver android:name="com.sunmi.v2.printer.PrinterReceiver" android:enabled="true" android:exported="true">
       <intent-filter android:priority="1000">
         <!-- 缺纸异常 -->
         <action android:name="woyou.aidlservice.jiuv5.OUT_OF_PAPER_ACTION" />  
